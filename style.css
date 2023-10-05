@@ -1,4 +1,4 @@
-
+/* Add this to your style.css */
 body {
     font-family: Arial, sans-serif;
     background-color: #1e1e1e; /* Dark background color */
@@ -36,36 +36,26 @@ main {
     text-align: center;
 }
 
-.vector-image {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
-
-.moving-circles {
+.loader {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    align-items: center;
+    height: 150px;
+    background-color: #1976D2; /* Light blue loader background */
 }
 
-.circle {
-    width: 50px;
-    height: 50px;
-    background-color: #ff5722; /* Orange circles */
-    border-radius: 50%;
-    margin: 0 10px;
-    animation: moveCircles 2s ease-in-out infinite;
+.letter-c {
+    font-size: 50px;
+    color: #fff; /* Text color for the letter "C" */
+    animation: spin 2s linear infinite;
 }
 
-@keyframes moveCircles {
+@keyframes spin {
     0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
+        transform: rotate(0deg);
     }
     100% {
-        transform: translateY(0);
+        transform: rotate(360deg);
     }
 }
 
