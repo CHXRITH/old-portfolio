@@ -1,14 +1,14 @@
-/* Add this to your style.css */
+
 body {
-    font-family: 'Your Custom Font', Arial, sans-serif;
-    background-color: #1e1e1e;
-    color: #fff;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Dark background color */
+    color: #fff; /* Text color */
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #1976D2;
+    background-color: #673ab7; /* Purple header background */
     padding: 10px;
 }
 
@@ -51,7 +51,7 @@ main {
 .circle {
     width: 50px;
     height: 50px;
-    background-color: #ff5722;
+    background-color: #ff5722; /* Orange circles */
     border-radius: 50%;
     margin: 0 10px;
     animation: moveCircles 2s ease-in-out infinite;
@@ -72,6 +72,6 @@ main {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
+    background-color: #333; /* Dark footer background */
     color: #fff;
 }
