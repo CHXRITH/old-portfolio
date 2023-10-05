@@ -1,11 +1,14 @@
+/* Add this to your style.css */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1e1e1e; /* Dark background color */
-    color: #fff; /* Text color */
+    font-family: 'Your Custom Font', Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #1976D2; /* Light blue header background */
+    background-color: #1976D2;
     padding: 10px;
 }
 
@@ -30,11 +33,45 @@ main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    text-align: center;
+}
+
+.vector-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.moving-circles {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #ff5722;
+    border-radius: 50%;
+    margin: 0 10px;
+    animation: moveCircles 2s ease-in-out infinite;
+}
+
+@keyframes moveCircles {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333; /* Dark footer background */
+    background-color: #333;
     color: #fff;
 }
