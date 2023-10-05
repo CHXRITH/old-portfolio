@@ -40,26 +40,36 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: 100vh; /* Full viewport height */
     background-color: #1976D2; /* Light blue loader background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999; /* Ensures it's above other elements */
 }
 
-.letter-c {
-    font-size: 50px;
-    color: #fff; /* Text color for the letter "C" */
-    animation: spin 2s linear infinite;
+.translate-animation {
+    width: 100px;
+    height: 100px;
+    background-color: #ff5722; /* Orange box */
+    animation: translateAnimation 2s linear infinite;
 }
 
-@keyframes spin {
+@keyframes translateAnimation {
     0% {
-        transform: rotate(0deg);
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
     }
     100% {
-        transform: rotate(360deg);
+        transform: translateY(0);
     }
 }
 
-footer {
+.footer {
     text-align: center;
     padding: 10px;
     background-color: #333; /* Dark footer background */
