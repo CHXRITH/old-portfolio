@@ -3,37 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>CHXRITH</title>
+    <title>Your Name - Web Developer</title>
+    <!-- Add your stylesheets and any additional meta tags or links here -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="loader"></div>
-    </div>
-    
-    <header>
-        <nav>
+
+    <!-- Navigation Section -->
+    <nav>
+        <div class="container">
+            <h1>Your Name</h1>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h2>Welcome to My Portfolio</h2>
+            <p>I am a passionate web developer, creating innovative and user-friendly websites.</p>
+            <a href="#portfolio" class="cta-button">View My Work</a>
+        </div>
     </header>
 
-    <main>
-        <h1>Welcome to CHXRITH</h1>
-        <p>Your source for web development tutorials.</p>
-    </main>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Introduce yourself and highlight your skills, experience, and passion for web development.</p>
+        </div>
+    </section>
 
-    <footer class="footer">
-        <p>&copy; 2023 CHXRITH</p>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <!-- Showcase your projects with images, descriptions, and links -->
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Description of Project 1.</p>
+                <a href="project1.html" class="cta-button">View Project</a>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Provide a contact form or links to your social media profiles for people to reach out to you.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Your Name. All rights reserved.</p>
+        </div>
     </footer>
 
-    <button id="theme-toggle">Toggle Theme</button>
+    <!-- Add your scripts and any additional elements here -->
 
-    <script src="script.js"></script>
 </body>
 </html>
