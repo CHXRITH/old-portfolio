@@ -20,6 +20,14 @@
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      opacity: 0; /* Initially hidden */
+      animation: fadeIn 2s ease-out forwards; /* Fade in animation */
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
     }
 
     h1 {
@@ -46,6 +54,25 @@
     #birthday-button:hover {
       background-color: #45a049;
     }
+
+    /* Balloon Animation */
+    .balloon {
+      position: absolute;
+      background-color: #ffcc00;
+      border-radius: 50%;
+      width: 20px;
+      height: 30px;
+      animation: balloonAnimation 2s infinite alternate;
+    }
+
+    @keyframes balloonAnimation {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-20px);
+      }
+    }
   </style>
 </head>
 <body>
@@ -60,6 +87,13 @@
 
   <a href="#" id="birthday-button">Send Wishes</a>
 </div>
+
+<!-- Balloon Animations -->
+<div class="balloon" style="left: 10%;"></div>
+<div class="balloon" style="left: 30%;"></div>
+<div class="balloon" style="left: 50%;"></div>
+<div class="balloon" style="left: 70%;"></div>
+<div class="balloon" style="left: 90%;"></div>
 
 <script>
   // You can add JavaScript functionality here if needed
