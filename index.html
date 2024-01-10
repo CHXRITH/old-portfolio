@@ -56,22 +56,48 @@
     }
 
     /* Balloon Animation */
+    .balloon-wrapper {
+      position: absolute;
+      width: 85px;
+    }
+
     .balloon {
       position: absolute;
-      background-color: #ffcc00;
+      background-color: var(--balloon-color);
       border-radius: 50%;
       width: 20px;
       height: 30px;
-      animation: balloonAnimation 2s infinite alternate;
+      animation: balloonAnimation 5s infinite linear;
     }
 
     @keyframes balloonAnimation {
       0% {
-        transform: translateY(0);
+        transform: translateY(0) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-200px) rotate(180deg);
       }
       100% {
-        transform: translateY(-20px);
+        transform: translateY(0) rotate(360deg);
       }
+    }
+
+    .green { 
+      --balloon-color: #4CAF50; 
+      --left-initial: 80px; 
+      --top-initial: 0;
+    }
+
+    .blue { 
+      --balloon-color: dodgerblue; 
+      --left-initial: 100px; 
+      --top-initial: 110px;
+    }
+
+    .orange { 
+      --balloon-color: orange; 
+      --left-initial: 140px; 
+      --top-initial: 50px; 
     }
   </style>
 </head>
@@ -89,11 +115,17 @@
 </div>
 
 <!-- Balloon Animations -->
-<div class="balloon" style="left: 10%;"></div>
-<div class="balloon" style="left: 30%;"></div>
-<div class="balloon" style="left: 50%;"></div>
-<div class="balloon" style="left: 70%;"></div>
-<div class="balloon" style="left: 90%;"></div>
+<div class="balloon-wrapper green">
+  <div class="balloon"></div>
+</div>
+
+<div class="balloon-wrapper blue">
+  <div class="balloon"></div>
+</div>
+
+<div class="balloon-wrapper orange">
+  <div class="balloon"></div>
+</div>
 
 <script>
   // You can add JavaScript functionality here if needed
